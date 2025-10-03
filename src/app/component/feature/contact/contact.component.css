@@ -1,0 +1,262 @@
+.contactpage {
+    min-height: 100vh;
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+/* Top Section */
+.cp-top {
+    text-align: center;
+    max-width: 700px;
+    margin-bottom: 40px;
+}
+
+.cp-top h4 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.cp-top span {
+    border-bottom: 3px solid #ffa600ec;
+    padding-bottom: 5px;
+}
+
+.cp-top p {
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.6);
+    line-height: 1.5;
+}
+
+/* Main Form + Info Layout */
+.form-cinfo {
+    display: flex;
+    flex-wrap: wrap; /* allow stacking on smaller screens */
+    gap: 30px;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+}
+
+/* Contact Form */
+form {
+    flex: 1 1 450px; /* responsive width */
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+label {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+input, select, textarea {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.fn-e {
+    display: flex;
+    gap: 20px;
+}
+
+.fn-e .ltb {
+    flex: 1;
+}
+
+button {
+    width: 100%;
+    height: 50px;
+    background: rgb(22, 89, 224);
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+button:hover {
+    background: royalblue;
+}
+
+/* Contact Info Box */
+.cinfo {
+    flex: 1 1 350px;
+    padding: 25px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+}
+
+.chead h3 {
+    margin-bottom: 20px;
+    font-size: 1.3rem;
+}
+
+.ci-add, .ci-phone, .ci-email, .ci-business {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.cil {
+    margin-right: 15px;
+    min-width: 30px;
+}
+
+.cir h5 {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+.cir p {
+    font-size: 14px;
+    margin: 2px 0;
+}
+
+/* Follow Us */
+.da-follow {
+    margin-top: 30px;
+}
+
+.daa-a {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.daa-a img {
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+
+.cp-bottom {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  background: #111827; /* dark background */
+  color: #f9fafb; /* light text */
+  padding: 50px 80px;
+}
+
+.cp-bottom .d1,
+.cp-bottom .d2 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cpbt-d1 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cpbt-d1 img {
+  width: 50px;
+  height: auto;
+}
+
+.ch3p h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+  color: rgb(253, 222, 81);
+}
+
+.ch3p p {
+  margin: 0;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #d1d5db;
+}
+
+.cpbt-txt {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 14px;
+  color: #d1d5db;
+}
+
+.cpbt-txt a {
+  text-decoration: none;
+  color: #d1d5db;
+  transition: color 0.3s;
+}
+
+.cpbt-txt a:hover {
+  color: rgb(253, 222, 81);
+}
+
+.cpbt-d1h {
+  display: flex;
+  gap: 12px;
+}
+
+.cpbt-d1h img {
+  width: 28px;
+  height: 28px;
+  transition: transform 0.3s;
+}
+
+.cpbt-d1h img:hover {
+  transform: scale(1.2);
+}
+
+.cpp p {
+  margin: 2px 0;
+}
+
+.cpbt-d1 i {
+  margin-right: 8px;
+  display: flex;
+  align-items: center;
+}
+
+/* Responsive Layout */
+@media (max-width: 1024px) {
+  .cp-bottom {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    padding: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cp-bottom {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .cpbt-d1,
+  .cpbt-txt,
+  .cpbt-d1h {
+    align-items: center;
+  }
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+    .fn-e {
+        flex-direction: column;
+    }
+}

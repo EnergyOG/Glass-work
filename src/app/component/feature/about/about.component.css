@@ -1,0 +1,151 @@
+.aboutpage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    background-color: rgb(249, 249, 249);
+    padding: 60px 8%;
+    font-family: "Poppins", sans-serif;
+}
+
+.ap-div1 {
+    position: relative;
+    flex: 1 1 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ap-div1 img {
+    width: 280px;
+    max-width: 100%;
+    height: auto;
+}
+.p15 {
+    position: absolute;
+    bottom: 40px;
+    right: 60px;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    background-color: #ffa600ec;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: inherit;
+    line-height: 1.2;
+    color: #fff;
+}
+.span15 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.ap-div2 {
+    flex: 1 1 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+
+.apd1 h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+.span-apd1h {
+    border-bottom: 3px solid #ffa600ec;
+    padding-bottom: 5px;
+}
+.apd1 p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-top: 10px;
+    color: rgba(0, 0, 0, 0.65);
+}
+
+.apd2-box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 50px;
+    margin-top: 20px;
+}
+.apd2gd {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+}
+.apd2gd i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.apd2gd p {
+    margin-left: 8px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.learn-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: -0.2px;
+    color: #fff;
+    background-color: rgb(22, 89, 224);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.2s ease;
+    text-align: center;
+    text-decoration: none;
+}
+.learn-btn:hover {
+    background-color: rgb(70, 121, 222);
+}
+
+@media (max-width: 992px) {
+    .aboutpage {
+        flex-direction: column;
+        text-align: center;
+    }
+    .ap-div1 {
+        order: 1;
+    }
+    .ap-div2 {
+        order: 2;
+    }
+    .p15 {
+        position: absolute;
+        bottom: 20px;
+        right: 20px;
+    }
+    .apd2-box {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .ap-div1 img {
+        width: 220px;
+    }
+    .p15 {
+        width: 70px;
+        height: 70px;
+        font-size: 12px;
+    }
+    .span15 {
+        font-size: 22px;
+    }
+    .apd1 h2 {
+        font-size: 1.4rem;
+    }
+    .apd1 p {
+        font-size: 13px;
+    }
+    .apd2-box {
+        gap: 15px 30px;
+    }
+}

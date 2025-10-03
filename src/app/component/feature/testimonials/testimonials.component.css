@@ -1,0 +1,225 @@
+.testimonial-page {
+    box-sizing: border-box;
+    min-height: 100vh;
+    padding: 80px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Poppins, sans-serif;
+}
+
+/* --- INTRO --- */
+.tp-intro {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.tp-intro h4 {
+    padding-bottom: 20px;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.tp-intro span {
+    border: 3px solid #ffa600ec;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    padding-bottom: 8px;
+}
+
+.tp-intro p {
+    font-size: 1rem;
+    color: rgba(0, 0, 0, 0.6);
+    line-height: 1.5;
+    margin: 0 auto;
+    max-width: 550px;
+}
+
+/* --- TESTIMONIAL BODY --- */
+.tp-body {
+    position: relative;
+    margin-top: 40px;
+    width: 100%;
+    max-width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    gap: 20px;
+    padding: 10px;
+    min-height: 380px;
+}
+
+.ng-div {
+    flex: 1 1 300px;
+    max-width: 350px;
+    border: none;
+    border-radius: 20px;
+    padding: 20px;
+    background: #fff;
+    opacity: 0;
+    transform: translateX(0);
+    animation-duration: 0.6s;
+    animation-fill-mode: forwards;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.star-rating {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #f1c40f;
+}
+
+.testimony {
+    font-size: 0.95rem;
+    color: rgba(0, 0, 0, 0.6);
+    line-height: 1.6;
+    flex: 1;
+}
+
+/* --- CLIENT INFO --- */
+.intpbp {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.tpb-img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.intpbp-b {
+    margin-left: 15px;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.name {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.tpb-p {
+    font-size: 0.85rem;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+/* --- SLIDE ANIMATIONS --- */
+.slide-left { animation-name: slideInLeft; }
+.slide-right { animation-name: slideInRight; }
+.slide-from-left { animation-name: slideFromLeftToCenter; }
+
+@keyframes slideInLeft {
+    from { transform: translateX(-100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideInRight {
+    from { transform: translateX(100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideFromLeftToCenter {
+    from { transform: translateX(-50%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+/* --- TOGGLE BUTTONS --- */
+.round-toggle {
+    margin: 30px 0 50px;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.round-toggle button {
+    background-color: rgb(102, 102, 222);
+    width: 14px;
+    height: 14px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.round-toggle button:hover {
+    background-color: rgb(155, 155, 250);
+}
+
+/* --- CALL TO ACTION --- */
+.tp-conc {
+    width: 100%;
+    text-align: center;
+    padding: 60px 20px;
+    background-color: rgb(63, 63, 219);
+}
+
+.tp-conc h3 {
+    color: white;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.tp-conc p {
+    color: white;
+    margin: 20px auto;
+    font-size: 1.1rem;
+    max-width: 680px;
+    line-height: 1.5;
+}
+
+.tp-conc a {
+    display: inline-block;
+    padding: 12px 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: rgb(255, 208, 0);
+    color: black;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.2s;
+}
+
+.tp-conc a:hover {
+    background-color: rgb(253, 222, 81);
+    transform: scale(1.05);
+    text-decoration: underline;
+}
+
+/* --- RESPONSIVENESS --- */
+@media (max-width: 900px) {
+    .tp-body {
+        flex-direction: column;
+        height: auto;
+    }
+    .ng-div {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 600px) {
+    .tp-intro h4 {
+        font-size: 1.4rem;
+    }
+    .tp-intro p {
+        font-size: 0.9rem;
+        max-width: 90%;
+    }
+    .star-rating {
+        font-size: 24px;
+    }
+    .tp-conc h3 {
+        font-size: 1.5rem;
+    }
+    .tp-conc p {
+        font-size: 0.95rem;
+        max-width: 90%;
+    }
+}

@@ -1,0 +1,34 @@
+<div class="testimonial-page">
+    <div class="tp-intro">
+        <h4>What O<span>ur Cli</span>ent Say</h4>
+        <p>Don't just take our word for it. Here's what our satisfied clients have to say about our products and
+            services.</p>
+    </div>
+    <div class="tp-body">
+        <div *ngFor="let testimonial of visibleTestimonials" class="ng-div animate" [ngClass]="animationClass">
+            <p class="star-rating">{{ testimonial.star_rating }}</p>
+            <p class="testimony">{{ testimonial.testify }}</p>
+            <div class="intpbp">
+                <div class="intpbp-t">
+                    <img [src]="testimonial.img" alt="testify icon" class="tpb-img" />
+                </div>
+                <div class="intpbp-b">
+                    <h4 class="name">{{ testimonial.name }}</h4>
+                    <p class="tpb-p">{{ testimonial.position }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="round-toggle">
+        <button (click)="showTestimonials('left')"></button>
+        <button (click)="showTestimonials('center')"></button>
+        <button (click)="showTestimonials('right')"></button>
+    </div>
+
+    <div class="tp-conc">
+        <h3>Ready to Transform Your Space?</h3>
+        <p>Contact us today for a free consultation and quote on your next glass or metal project.</p>
+        <a href="#contact">Get Started Now</a>
+    </div>
+</div>
